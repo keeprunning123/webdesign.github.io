@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淡水鱼养殖技术与批发 - 专业水产养殖服务</title>
+    <style>
+        /* 全局样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 头部样式 */
+        header {
+            background: linear-gradient(to right, #1a6fb3, #2c8fd6);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e6f7ff;
+        }
+
+        .admin-btn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .admin-btn:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        /* 主横幅 */
+        .hero {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 0 1rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2c8fd6;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #1a6fb3;
+        }
+
+        /* 主要内容区域 */
+        section {
+            padding: 3rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #1a6fb3;
+        }
+
+        /* 养殖技术部分 */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .tech-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tech-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .tech-card-content {
+            padding: 1.5rem;
+        }
+
+        .tech-card h3 {
+            margin-bottom: 0.5rem;
+            color: #1a6fb3;
+        }
+
+        /* 视频展示部分 */
+        .video-section {
+            background: #e8f4fc;
+            padding: 3rem 0;
+        }
+
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .video-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .video-item video {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .video-content {
+            padding: 1.5rem;
+        }
+
+        .video-content h3 {
+            margin-bottom: 0.5rem;
+            color: #1a6fb3;
+        }
+
+        /* 批发信息部分 */
+        .wholesale-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .fish-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .fish-item {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .fish-item h4 {
+            color: #1a6fb3;
+            margin-bottom: 0.5rem;
+        }
+
+        /* 联系表单 */
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        /* 页脚 */
+        footer {
+            background: #333;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #2c8fd6;
+        }
+
+        .copyright {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #555;
+        }
+
+        /* 管理员面板 */
+        .admin-panel {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        .admin-content {
+            background: white;
+            width: 90%;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+        }
+
+        .admin-tabs {
+            display: flex;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .admin-tab {
+            padding: 0.7rem 1.5rem;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+        }
+
+        .admin-tab.active {
+            border-bottom: 3px solid #2c8fd6;
+            color: #2c8fd6;
+            font-weight: bold;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .upload-area {
+            border: 2px dashed #ddd;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .upload-area:hover {
+            border-color: #2c8fd6;
+            background: #f0f8ff;
+        }
+
+        .upload-area i {
+            font-size: 3rem;
+            color: #2c8fd6;
+            margin-bottom: 1rem;
+        }
+
+        .upload-preview {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .preview-item {
+            position: relative;
+            width: 150px;
+            height: 100px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .preview-item img, .preview-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .preview-item .remove {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+        }
+
+        /* 登录表单样式 */
+        .login-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin: 100px auto;
+        }
+
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #1a6fb3;
+        }
+
+        .error-message {
+            color: #e74c3c;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                margin-top: 1rem;
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 0 0.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .admin-content {
+                width: 95%;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部导航 -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">淡水鱼养殖</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#technology">养殖技术</a></li>
+                    <li><a href="#videos">视频展示</a></li>
+                    <li><a href="#wholesale">批发信息</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button class="admin-btn" id="adminToggle">管理后台</button>
+    </header>
+
+    <!-- 主横幅 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>专业淡水鱼养殖技术与批发服务</h1>
+            <p>提供全面的养殖技术指导，优质的淡水鱼批发，助力您的水产事业成功</p>
+            <a href="#contact" class="btn">立即咨询</a>
+        </div>
+    </section>
+
+    <!-- 养殖技术部分 -->
+    <section id="technology" class="container">
+        <h2 class="section-title">淡水鱼养殖技术</h2>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <img src="https://via.placeholder.com/400x250" alt="池塘建设" id="tech-img-1">
+                <div class="tech-card-content">
+                    <h3>池塘建设与设计</h3>
+                    <p>详细介绍淡水鱼养殖池塘的选址、设计、建设和维护要点，包括池塘大小、深度、水质控制等关键技术。</p>
+                </div>
+            </div>
+            <div class="tech-card">
+                <img src="https://via.placeholder.com/400x250" alt="鱼种选择" id="tech-img-2">
+                <div class="tech-card-content">
+                    <h3>鱼种选择与投放</h3>
+                    <p>分析常见淡水鱼种的特性，提供鱼种选择建议，以及投放时间、密度和方法的专业指导。</p>
+                </div>
+            </div>
+            <div class="tech-card">
+                <img src="https://via.placeholder.com/400x250" alt="饲料管理" id="tech-img-3">
+                <div class="tech-card-content">
+                    <h3>饲料与喂养管理</h3>
+                    <p>讲解不同生长阶段的饲料选择、投喂频率和数量控制，以及如何根据水质和天气调整喂养策略。</p>
+                </div>
+            </div>
+            <div class="tech-card">
+                <img src="https://via.placeholder.com/400x250" alt="疾病防治" id="tech-img-4">
+                <div class="tech-card-content">
+                    <h3>疾病预防与治疗</h3>
+                    <p>介绍常见淡水鱼疾病的识别、预防措施和治疗方法，帮助养殖户降低损失，提高养殖成功率。</p>
+                </div>
+            </div>
+            <div class="tech-card">
+                <img src="https://via.placeholder.com/400x250" alt="水质管理" id="tech-img-5">
+                <div class="tech-card-content">
+                    <h3>水质监测与管理</h3>
+                    <p>详细说明水质参数监测方法，以及如何通过增氧、换水、调节pH值等手段维持优良水质环境。</p>
+                </div>
+            </div>
+            <div class="tech-card">
+                <img src="https://via.placeholder.com/400x250" alt="收获技术" id="tech-img-6">
+                <div class="tech-card-content">
+                    <h3>收获与运输技术</h3>
+                    <p>指导正确的收获时机、方法和工具选择，以及活鱼运输的关键技术和注意事项。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 视频展示部分 -->
+    <section id="videos" class="video-section">
+        <div class="container">
+            <h2 class="section-title">养殖视频展示</h2>
+            <div class="video-container">
+                <div class="video-item">
+                    <video id="video-1" controls>
+                        <source src="#" type="video/mp4">
+                        您的浏览器不支持视频播放。
+                    </video>
+                    <div class="video-content">
+                        <h3>池塘建设全过程</h3>
+                        <p>展示专业鱼塘从选址到建设的完整流程。</p>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <video id="video-2" controls>
+                        <source src="#" type="video/mp4">
+                        您的浏览器不支持视频播放。
+                    </video>
+                    <div class="video-content">
+                        <h3>科学喂养技术</h3>
+                        <p>演示如何根据鱼的生长阶段进行科学喂养。</p>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <video id="video-3" controls>
+                        <source src="#" type="video/mp4">
+                        您的浏览器不支持视频播放。
+                    </video>
+                    <div class="video-content">
+                        <h3>疾病防治方法</h3>
+                        <p>介绍常见鱼病的识别与防治措施。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 批发信息部分 -->
+    <section id="wholesale" class="container">
+        <h2 class="section-title">淡水鱼批发信息</h2>
+        <div class="wholesale-info">
+            <p>我们提供多种优质淡水鱼的批发服务，包括草鱼、鲤鱼、鲫鱼、鳙鱼、鲢鱼等常见品种。所有鱼类均来自科学养殖的健康鱼塘，保证品质优良。</p>
+
+            <h3>主要批发品种</h3>
+            <div class="fish-list">
+                <div class="fish-item">
+                    <h4>草鱼</h4>
+                    <p>规格：1-3公斤/条</p>
+                    <p>价格：面议</p>
+                </div>
+                <div class="fish-item">
+                    <h4>鲤鱼</h4>
+                    <p>规格：0.5-2公斤/条</p>
+                    <p>价格：面议</p>
+                </div>
+                <div class="fish-item">
+                    <h4>鲫鱼</h4>
+                    <p>规格：0.4-0.7斤/条</p>
+                    <p>价格：8元/斤</p>
+                </div>
+                <div class="fish-item">
+                    <h4>鳙鱼</h4>
+                    <p>规格：1-2.5公斤/条</p>
+                    <p>价格：面议</p>
+                </div>
+                <div class="fish-item">
+                    <h4>鲢鱼</h4>
+                    <p>规格：1-3公斤/条</p>
+                    <p>价格：面议</p>
+                </div>
+            </div>
+
+            <h3>批发政策</h3>
+            <ul>
+                <li>最小起批量：100公斤</li>
+                <li>提供活鱼运输服务，保证存活率</li>
+                <li>量大从优，长期合作客户享受特别优惠</li>
+                <li>支持定制规格和品种组合</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 联系我们部分 -->
+    <section id="contact" class="container">
+        <h2 class="section-title">联系我们</h2>
+        <div class="contact-form">
+            <form id="inquiry-form">
+                <div class="form-group">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">联系电话</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">电子邮箱</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="interest">您感兴趣的内容</label>
+                    <select id="interest" name="interest">
+                        <option value="technology">养殖技术咨询</option>
+                        <option value="wholesale">批发业务</option>
+                        <option value="cooperation">合作机会</option>
+                        <option value="other">其他</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">详细内容</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">提交咨询</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>联系我们</h3>
+                <p>地址：河南省信阳市息县夏庄水产养殖基地</p>
+                <p>电话：15625046161</p>
+                <p>邮箱：1026333419@qq.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>服务范围</h3>
+                <p>淡水鱼养殖技术指导</p>
+                <p>优质鱼苗供应</p>
+                <p>成品鱼批发</p>
+                <p>养殖设备咨询</p>
+            </div>
+            <div class="footer-section">
+                <h3>关注我们</h3>
+                <p>微信公众号：淡水鱼养殖专家</p>
+                <p>抖音号：keep running</p>
+            </div>
+        </div>
+        <div class="copyright container">
+            <p>&copy; 2023 淡水鱼养殖专家 版权所有</p>
+        </div>
+    </footer>
+
+    <!-- 管理员登录面板 -->
+    <div class="admin-panel" id="loginPanel">
+        <div class="login-form">
+            <h2>管理员登录</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">账号</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">密码</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="error-message" id="login-error"></div>
+                </div>
+                <button type="submit" class="btn">登录</button>
+                <button type="button" class="btn" id="cancel-login" style="background: #6c757d; margin-left: 10px;">取消</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 管理员面板 -->
+    <div class="admin-panel" id="adminPanel">
+        <div class="admin-content">
+            <div class="admin-header">
+                <h2>网站内容管理</h2>
+                <button class="btn" id="closeAdmin">关闭</button>
+            </div>
+
+            <div class="admin-tabs">
+                <div class="admin-tab active" data-tab="images">图片管理</div>
+                <div class="admin-tab" data-tab="videos">视频管理</div>
+                <div class="admin-tab" data-tab="content">内容管理</div>
+            </div>
+
+            <div class="tab-content active" id="images-tab">
+                <h3>更新网站图片</h3>
+                <p>选择要更新的图片位置，然后上传新图片。</p>
+
+                <div class="form-group">
+                    <label for="image-select">选择图片位置</label>
+                    <select id="image-select">
+                        <option value="hero">主横幅背景</option>
+                        <option value="tech-1">技术图片1 - 池塘建设</option>
+                        <option value="tech-2">技术图片2 - 鱼种选择</option>
+                        <option value="tech-3">技术图片3 - 饲料管理</option>
+                        <option value="tech-4">技术图片4 - 疾病防治</option>
+                        <option value="tech-5">技术图片5 - 水质管理</option>
+                        <option value="tech-6">技术图片6 - 收获技术</option>
+                    </select>
+                </div>
+
+                <div class="upload-area" id="image-upload">
+                    <i>📷</i>
+                    <p>点击或拖拽图片到此处上传</p>
+                    <input type="file" id="image-input" accept="image/*" style="display: none;">
+                </div>
+
+                <div class="upload-preview" id="image-preview"></div>
+
+                <button class="btn" id="save-image">保存图片更改</button>
+            </div>
+
+            <div class="tab-content" id="videos-tab">
+                <h3>更新网站视频</h3>
+                <p>选择要更新的视频位置，然后上传新视频。</p>
+
+                <div class="form-group">
+                    <label for="video-select">选择视频位置</label>
+                    <select id="video-select">
+                        <option value="video-1">视频1 - 池塘建设</option>
+                        <option value="video-2">视频2 - 科学喂养</option>
+                        <option value="video-3">视频3 - 疾病防治</option>
+                    </select>
+                </div>
+
+                <div class="upload-area" id="video-upload">
+                    <i>🎬</i>
+                    <p>点击或拖拽视频到此处上传</p>
+                    <input type="file" id="video-input" accept="video/*" style="display: none;">
+                </div>
+
+                <div class="upload-preview" id="video-preview"></div>
+
+                <button class="btn" id="save-video">保存视频更改</button>
+            </div>
+
+            <div class="tab-content" id="content-tab">
+                <h3>更新网站内容</h3>
+                <p>编辑网站的文本内容。</p>
+
+                <div class="form-group">
+                    <label for="content-select">选择内容区域</label>
+                    <select id="content-select">
+                        <option value="hero-title">主横幅标题</option>
+                        <option value="hero-text">主横幅描述</option>
+                        <option value="tech-1-title">技术1标题</option>
+                        <option value="tech-1-text">技术1描述</option>
+                        <option value="tech-2-title">技术2标题</option>
+                        <option value="tech-2-text">技术2描述</option>
+                        <option value="wholesale-intro">批发介绍</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="content-editor">内容编辑</label>
+                    <textarea id="content-editor" rows="5"></textarea>
+                </div>
+
+                <button class="btn" id="save-content">保存内容更改</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 管理员密码验证
+        const ADMIN_USERNAME = "1026333419@qq.com";
+        const ADMIN_PASSWORD = "FSPyj123456@";
+
+        // 管理员面板功能
+        const adminToggle = document.getElementById('adminToggle');
+        const loginPanel = document.getElementById('loginPanel');
+        const adminPanel = document.getElementById('adminPanel');
+        const closeAdmin = document.getElementById('closeAdmin');
+        const cancelLogin = document.getElementById('cancel-login');
+        const loginForm = document.getElementById('login-form');
+
+        adminToggle.addEventListener('click', () => {
+            loginPanel.style.display = 'block';
+        });
+
+        closeAdmin.addEventListener('click', () => {
+            adminPanel.style.display = 'none';
+        });
+
+        cancelLogin.addEventListener('click', () => {
+            loginPanel.style.display = 'none';
+        });
+
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorElement = document.getElementById('login-error');
+
+            if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
+                loginPanel.style.display = 'none';
+                adminPanel.style.display = 'block';
+                errorElement.textContent = '';
+            } else {
+                errorElement.textContent = '账号或密码错误！';
+            }
+        });
+
+        // 标签切换功能
+        const tabs = document.querySelectorAll('.admin-tab');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // 移除所有活动标签
+                tabs.forEach(t => t.classList.remove('active'));
+                // 添加活动标签
+                tab.classList.add('active');
+
+                // 隐藏所有内容
+                document.querySelectorAll('.tab-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+
+                // 显示对应内容
+                const tabId = tab.getAttribute('data-tab');
+                document.getElementById(`${tabId}-tab`).classList.add('active');
+            });
+        });
+
+        // 图片上传功能
+        const imageUpload = document.getElementById('image-upload');
+        const imageInput = document.getElementById('image-input');
+        const imagePreview = document.getElementById('image-preview');
+
+        imageUpload.addEventListener('click', () => {
+            imageInput.click();
+        });
+
+        imageInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    const previewItem = document.createElement('div');
+                    previewItem.className = 'preview-item';
+                    previewItem.innerHTML = `
+                        <img src="${event.target.result}" alt="预览">
+                        <button class="remove" onclick="this.parentElement.remove()">×</button>
+                    `;
+                    imagePreview.innerHTML = '';
+                    imagePreview.appendChild(previewItem);
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // 视频上传功能
+        const videoUpload = document.getElementById('video-upload');
+        const videoInput = document.getElementById('video-input');
+        const videoPreview = document.getElementById('video-preview');
+
+        videoUpload.addEventListener('click', () => {
+            videoInput.click();
+        });
+
+        videoInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                const url = URL.createObjectURL(file);
+                const previewItem = document.createElement('div');
+                previewItem.className = 'preview-item';
+                previewItem.innerHTML = `
+                    <video controls src="${url}"></video>
+                    <button class="remove" onclick="this.parentElement.remove()">×</button>
+                `;
+                videoPreview.innerHTML = '';
+                videoPreview.appendChild(previewItem);
+            }
+        });
+
+        // 保存图片更改
+        document.getElementById('save-image').addEventListener('click', () => {
+            const imageSelect = document.getElementById('image-select').value;
+            const previewImg = document.querySelector('#image-preview img');
+
+            if (previewImg) {
+                const newSrc = previewImg.src;
+                if (imageSelect === 'hero') {
+                    // 更新横幅背景
+                    document.querySelector('.hero').style.backgroundImage = `url('${newSrc}')`;
+                } else {
+                    // 更新技术图片
+                    const imgId = imageSelect.replace('tech-', 'tech-img-');
+                    document.getElementById(imgId).src = newSrc;
+                }
+                alert('图片更新成功！');
+            } else {
+                alert('请先上传图片！');
+            }
+        });
+
+        // 保存视频更改
+        document.getElementById('save-video').addEventListener('click', () => {
+            const videoSelect = document.getElementById('video-select').value;
+            const previewVideo = document.querySelector('#video-preview video');
+
+            if (previewVideo) {
+                const newSrc = previewVideo.src;
+                document.getElementById(videoSelect).src = newSrc;
+                alert('视频更新成功！');
+            } else {
+                alert('请先上传视频！');
+            }
+        });
+
+        // 内容编辑功能
+        const contentSelect = document.getElementById('content-select');
+        const contentEditor = document.getElementById('content-editor');
+
+        // 根据选择的内容区域更新编辑器
+        contentSelect.addEventListener('change', () => {
+            const contentId = contentSelect.value;
+            let currentContent = '';
+
+            if (contentId === 'hero-title') {
+                currentContent = document.querySelector('.hero h1').textContent;
+            } else if (contentId === 'hero-text') {
+                currentContent = document.querySelector('.hero p').textContent;
+            } else if (contentId.startsWith('tech-')) {
+                const parts = contentId.split('-');
+                const techIndex = parts[1];
+                const isTitle = parts[2] === 'title';
+
+                const techCard = document.querySelectorAll('.tech-card')[techIndex-1];
+                if (isTitle) {
+                    currentContent = techCard.querySelector('h3').textContent;
+                } else {
+                    currentContent = techCard.querySelector('p').textContent;
+                }
+            } else if (contentId === 'wholesale-intro') {
+                currentContent = document.querySelector('.wholesale-info p').textContent;
+            }
+
+            contentEditor.value = currentContent;
+        });
+
+        // 保存内容更改
+        document.getElementById('save-content').addEventListener('click', () => {
+            const contentId = contentSelect.value;
+            const newContent = contentEditor.value;
+
+            if (contentId === 'hero-title') {
+                document.querySelector('.hero h1').textContent = newContent;
+            } else if (contentId === 'hero-text') {
+                document.querySelector('.hero p').textContent = newContent;
+            } else if (contentId.startsWith('tech-')) {
+                const parts = contentId.split('-');
+                const techIndex = parts[1];
+                const isTitle = parts[2] === 'title';
+
+                const techCard = document.querySelectorAll('.tech-card')[techIndex-1];
+                if (isTitle) {
+                    techCard.querySelector('h3').textContent = newContent;
+                } else {
+                    techCard.querySelector('p').textContent = newContent;
+                }
+            } else if (contentId === 'wholesale-intro') {
+                document.querySelector('.wholesale-info p').textContent = newContent;
+            }
+
+            alert('内容更新成功！');
+        });
+
+        // 表单提交处理
+        document.getElementById('inquiry-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('感谢您的咨询！我们会尽快与您联系。');
+            this.reset();
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
